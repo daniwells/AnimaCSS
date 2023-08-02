@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #loading {
+            width: 60px;
+            height: 60px;
+            background-color: transparent;
+            display: block;
+            border: 10px solid brown;
+            border-right: 10px solid transparent;
+            border-radius: 50%;
+            animation: loading 1s ease-in-out infinite;
+        }
+
+        @keyframes loading {
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <span id="loading"></span>
+    </main>
+</body>
+</html>

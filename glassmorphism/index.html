@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('images6.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            border: 3px solid white;
+            color: white;
+            width: 800px;
+            border-radius: 20px;
+            padding: 80px;
+            font-size: larger;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        main:hover{
+            backdrop-filter: blur(10px);
+        }
+
+        article {
+            position: relative;
+            top: 250px;
+            transition: 0.5s;
+        }
+
+        main:hover article{
+            top: 0;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Hello World!</h1>
+            <h2>Hello peoples, my name is Daniel.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, vero aliquam provident molestias fugit aliquid sunt blanditiis saepe. Quas doloremque voluptatum facere voluptatibus itaque voluptate asperiores corporis quod distinctio quasi. lorem</p>
+        </article>
+    </main>
+</body>
+</html>
